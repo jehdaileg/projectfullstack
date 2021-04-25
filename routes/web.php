@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+
 });
+
+Route::get("/test2", [TestController::class, 'getMessageClient']);
+
+//Handling spa route for any route
+
+Route::any('{slug}', function(){
+
+    return view('welcome');
+});
+
+
