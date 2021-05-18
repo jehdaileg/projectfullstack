@@ -24,6 +24,13 @@
         </div>
 
 
+        <script>
+
+
+
+        </script>
+
+
 
         <script src="{{ asset('/js/app.js') }}"></script>
 

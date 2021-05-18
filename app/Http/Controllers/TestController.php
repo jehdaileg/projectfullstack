@@ -17,4 +17,15 @@ class TestController extends Controller
 
         ]);
     }
+
+    public function getApiResponseDatas() {
+
+       return response()->json([
+
+        'msg' => 'An error occured'
+
+       ], 422);
+    }
+
+
 }
